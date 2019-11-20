@@ -1,0 +1,58 @@
+.calc__wrapper {
+  padding: 30px;  
+  background-color: #eeeeee;  
+
+  transition: background .15s linear;
+}
+.calc__wrapper:hover {
+    
+  background-color: brown;  
+}
+
+.calc__result {  
+  margin-top: 10px;
+}
+.result {
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* form ===========================
+============= */
+form {
+  display: flex;
+  margin-top: 15px;
+}
+
+input[type="number"],
+input[type="submit"],
+select[name="ratesNames"],
+option {
+  border: none;
+  padding: 5px;
+  display: block;
+}
+input[type="number"]:hover,
+input[type="number"]:focus,
+select[name="ratesNames"]:hover,
+select[name="ratesNames"]:focus,
+option:hover,
+option:focus {
+  border: none;
+}
+input[type="submit"] {
+  padding-left: 20px;
+  padding-right:20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff;
+  color: brown;
+  
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #eee; 
+}
+.result__value {
+  font-size: 20px;  
+}

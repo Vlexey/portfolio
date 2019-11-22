@@ -1,0 +1,53 @@
+.human__wrapper {
+  box-sizing: border-box;
+  padding: 30px 20px;
+  background-color:#eee;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #eee;
+
+  transition: border .15s linear;
+}
+.human__wrapper:hover {
+  border-color: tomato;
+}
+.avatar {
+  display: flex;
+   
+}
+.span {
+  display: inline-block;
+}
+h2 {
+  margin-bottom: 10px;
+}
+.prof {
+  margin-bottom: 15px;
+}
+button {
+  width: 80%;
+  padding: 5px;
+  border: 2px solid tomato;
+  font-size: 16px;
+  background-color: #fff;
+
+  transition: background .15s linear;
+}
+button:hover {
+  background-color: tomato;
+}
+.rename {
+  display: flex;
+  flex-grow: 1;  
+}
+input[type="text"] {
+  display: block;
+  border: none;
+  border-bottom: 2px solid tomato;
+  padding: 5px;
+  background-color: #eee;
+  font-size: 16px;  
+  margin-top: 6px;
+  color: #888;
+}

@@ -1,0 +1,144 @@
+.TodoListItem {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: max-content max-content;
+
+  align-items: center;
+
+  border: 2px solid #eee;
+
+  margin-bottom: 40px;
+
+  .taskHead,
+  .timeHead,
+  .iconsHead {
+    padding: 15px 20px;
+
+    background: #eee;
+
+    color: #222;
+  }
+  .taskHead {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .timeHead {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .iconsHead {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .taskName {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    padding: 15px 30px;
+
+    color: #222;    
+
+    border-right: 2px solid #eee;
+  }
+
+  .timeCount {
+    grid-column: 2/3;
+    grid-row: 2 / 3;
+
+    padding: 15px 30px;
+
+    color: #222;
+
+    border-right: 2px solid #eee;
+  }
+
+  .iconsWrapper {
+    grid-column: 3/4;
+    grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .importantIcon {
+    .MuiSvgIcon-root {
+      fill: #eee;
+      &:hover,
+      &:focus {
+        fill: SandyBrown;
+      }
+    }
+  }
+  .importantIcon.active {
+    .MuiSvgIcon-root {
+      fill: SandyBrown;
+    }
+  }
+
+  .checkIcon {
+    .MuiSvgIcon-root {
+      fill: #eee;
+      &:hover,
+      &:focus {
+        fill: LightSeaGreen;
+      }
+    }
+  }
+  .checkIcon.active {
+    .MuiSvgIcon-root {
+      fill: LightSeaGreen;
+    }
+  }
+
+  .trashIcon {
+    .MuiSvgIcon-root {
+      fill: #eee;
+      &:hover,
+      &:focus {
+        fill: tomato;
+      }
+    }
+  }
+  
+}
+.TodoListItem.important {
+  border-color: tomato;
+  font-weight: bold;
+
+  .taskHead,
+  .timeHead,
+  .iconsHead {
+    background: tomato;
+  }
+
+  .taskName {
+    border-right-color: tomato;
+  }
+
+  .timeCount {
+    border-right-color: tomato;
+  }
+}
+.TodoListItem.done {
+  border-color: LightSeaGreen;
+
+  .taskHead,
+  .timeHead,
+  .iconsHead {
+    background: LightSeaGreen;
+  }
+
+  .taskName {
+    border-right-color: LightSeaGreen;
+    text-decoration: line-through;
+    color: #aaa;
+  }
+
+  .timeCount {
+    border-right-color: LightSeaGreen;
+    text-decoration: line-through;
+    color: #aaa;
+  }
+}

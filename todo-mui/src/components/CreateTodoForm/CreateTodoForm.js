@@ -26,8 +26,8 @@ const useStyles = makeStyles(theme => ({
 export const CreateTodoForm = (props) => {
     const classes = useStyles();  
     return (
-      <Formik
-                initialValues={{
+      <div className="container">
+      <Formik   initialValues={{
                     task: '',
                     howDays: ''                    
                 }}
@@ -97,5 +97,6 @@ export const CreateTodoForm = (props) => {
                 </Form>
                 )}
             </Formik>
+          </div>
     )
   }

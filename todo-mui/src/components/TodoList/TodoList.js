@@ -8,7 +8,7 @@ import TodoListItem from "./TodoListItem/TodoListItem";
 const TodoList = (props) => {
   
   return (
-    <ul className="TodoList">
+    <ul className="TodoList container">
      
       {
         props.todoList.length === 0

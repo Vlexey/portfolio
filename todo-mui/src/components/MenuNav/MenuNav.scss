@@ -1,0 +1,28 @@
+.header {
+   background-color: #2196f3;
+
+   .MenuNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      color: #eee;
+
+      padding: 20px 10px;
+      a {
+         color: #eee;
+         text-decoration: none;
+      }
+   }
+   .MenuNav__item {
+      margin-right: 20px;      
+
+      &:hover {
+         color: orange;
+      }
+   }
+   .MenuNav__item:last-of-type {
+      margin-right: 0;
+   }
+
+}

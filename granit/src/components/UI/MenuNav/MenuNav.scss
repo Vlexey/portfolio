@@ -1,0 +1,38 @@
+@import '../../../assets/style/variables';
+.MenuNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  right: 0;
+
+
+  a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 20px;
+
+    font-weight: bold;
+    text-decoration: none;
+    color: $colorDarkGray;
+
+    background-color: $colorOrange;
+
+    transition: background-color .15s linear;
+    &:hover {
+      background-color: $colorHoverOrange;
+    }
+    &.active {
+      background-color: $colorHoverOrange;
+      text-decoration: underline;
+    }
+  }
+
+
+}

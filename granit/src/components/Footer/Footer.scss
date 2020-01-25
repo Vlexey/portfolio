@@ -1,0 +1,19 @@
+@import '../../assets/style/variables';
+.Footer {
+  background-color: $colorDarkGray;
+  height: 190px;
+
+  .Footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    height: 100%;
+    color: $colorWhite;
+
+
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../assets/style/variables';
+.Logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Logo__container {
+  margin-left: 1rem;
+
+  .Logo__name {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $colorDarkGray;
+  }
+  .Logo__subtitle {
+    color: $colorGray;
+    font-size: 12px;
+  }
+}
+.Logo.Logo__invert {
+  img {
+    filter: invert(1);
+  }
+
+  .Logo__name {
+    color: $colorWhite;
+  }
+  .Logo__subtitle {
+    color: $colorWhite;
+  }
+}

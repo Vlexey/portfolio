@@ -1,0 +1,38 @@
+@import '../../assets/style/variables';
+.HeaderSlider {
+
+  color: $colorWhite;
+  background-color: $colorDarkGray;
+
+  background: url('./imgs/slider-full.jpg') no-repeat 50% 50% / cover;;
+
+  .HeaderSlider__wrapper {
+    padding: 140px 0;
+    height: 100%;
+  }
+
+  .HeaderSlider__title {
+    margin-bottom: 28px;
+  }
+
+  .HeaderSlider__text {
+    max-width: 245px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  button {
+    margin-right: 1.2rem;
+  }
+  a {
+    margin-left: 1.2rem;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  a, p, h1 {
+    color: $colorWhite;
+  }
+}
+
+@media (max-width: 941px) {
+  background-image: url('./imgs/slider-940.jpg');
+}

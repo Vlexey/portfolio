@@ -1,0 +1,44 @@
+@import '../../../assets/style/variables';
+.Button {
+  padding: 15px 25px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: $colorDarkGray;
+
+  border: none;
+  outline: none;
+
+  transition: background-color .15s linear;
+
+}
+
+.Button__callback {
+    background: none;
+    border: 3px solid $colorDarkGray;
+    &:hover, &:focus {
+      background-color: $colorDarkGray;
+      color: $colorWhite;
+    }
+}
+
+.Button__orange {
+  padding: 20px 30px;
+  background-color: $colorOrange;
+  &:hover, &:focus {
+    background-color: $colorHoverOrange;
+  }
+
+}
+
+.Button__sale {
+  color: $colorWhite;
+  padding: 20px 30px;
+  background-color: darkred;
+  &:hover, &:focus {
+    background-color: darkred;
+    filter: brightness(1.4);
+  }
+
+}

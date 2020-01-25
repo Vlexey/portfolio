@@ -1,0 +1,11 @@
+@import '../../../assets/style/variables';
+.Block__title {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 60px;
+
+  color: $colorDarkGray;
+  text-align: center;
+  text-transform: uppercase;
+}

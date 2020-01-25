@@ -1,0 +1,72 @@
+@import '../../../assets/style/variables';
+.ListItem {
+  display: grid;
+  grid-template-columns: 1fr;
+
+
+  position: relative;
+
+  padding: 18px;
+  text-align: center;
+
+  border: 2px solid $colorLightGray;
+  
+  transition: border .2s linear;
+
+  p {
+    color: $colorDarkGray;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    margin-top: 0;
+    padding-top: 5px;
+    margin-bottom: 15px;
+  }
+  &:hover {
+    border-color: $colorHoverOrange;
+  }
+
+  .saleLabel {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    padding: 5px;
+
+    background-color: darkred;
+
+    text-transform: uppercase;
+    color: $colorWhite;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .sale__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+  .saleFirstPrice {
+    color: darkred;
+    padding-left: 10px;
+  }
+  .salePrice {
+    color: $colorGray;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+}
+.ListItem__large {
+  grid-template-rows: 185px max-content 90px max-content max-content;
+}
+.ListItem__small {
+  grid-template-rows: 175px 30px max-content max-content;
+}
+
+.ListItem.sale {
+  &:hover {
+    border-color: darkred;
+  }
+}

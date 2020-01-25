@@ -1,0 +1,49 @@
+@import './assets/style/variables';
+@import './assets/style/fonts';
+html {
+  font-size: 15px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline-color: $colorOrange;
+}
+body {
+  margin-top: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3 {
+  color: $colorDarkGray;
+}
+h1 {
+  font-size: 2.7rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p {
+  font-size: 0.9rem;
+  color: $colorGray;
+}
+a {
+  color: $colorDarkGray;
+}
+a:focus {
+  background-color: $colorHoverOrange;
+}
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+img {
+  display: block;
+}
